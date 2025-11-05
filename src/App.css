@@ -8,6 +8,11 @@ body {
 .navbar {
   background-color: #202124;
   padding: 1rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .navbar ul {

@@ -1,0 +1,191 @@
+.about-content {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 1rem 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #4285f4;
+  margin: 0 0 3rem 0;
+  border-radius: 2px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333333;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 4rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.gdg-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gdg-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.gdg-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gdg-google {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.gdg-developers {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    font-size: 1.05rem;
+  }
+
+  .gdg-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .gdg-google {
+    font-size: 1.4rem;
+  }
+
+  .gdg-developers {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .title-underline {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+
+  .gdg-branding {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gdg-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gdg-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .gdg-google {
+    font-size: 1.3rem;
+  }
+
+  .gdg-developers {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+  .about-content {
+    padding: 0 0.5rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .title-underline {
+    width: 50px;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+  }
+
+  .gdg-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .gdg-google {
+    font-size: 1.2rem;
+  }
+
+  .gdg-developers {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small mobile styles */
+@media (max-width: 360px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+}

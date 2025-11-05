@@ -1,28 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Community from "./pages/Community";
-import Resources from "./pages/Resources";
+import Meetings from "./pages/Meetings";
 import About from "./pages/About";
 import "./App.css";
+
+function Navbar() {
+  // All pages now use BrowserWindow component with tabs, so navbar is hidden
+  return null;
+}
 
 function App() {
   return (
     <Router>
-      <nav className="navbar">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><a href="#meetings">Events</a></li>
-          <li><Link to="/community">Community</Link></li>
-          <li><Link to="/resources">Resources</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </nav>
-
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/meetings" element={<Meetings />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
